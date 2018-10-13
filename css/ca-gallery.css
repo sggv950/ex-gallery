@@ -41,7 +41,7 @@ section h3.section-subheading {
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-#contact input {
+#contact input, #contact textarea {
     width: 90%;
 }
 
