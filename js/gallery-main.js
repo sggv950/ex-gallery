@@ -42,11 +42,11 @@ function renderModal(projId) {
                   <li>Client: ----</li>
                   <li>Category: ${project.labels.join(', ')}</li>
                 </ul>
-                <button class="btn btn-secondary"><a href="proj/${project.id}/index.html">Try It!</button>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                 <i class="fa fa-times"></i>
                 Close Project</button>
-            </div>
+                </div>
+                <button class="btn btn-secondary"><a href="proj/${project.id}/index.html">Try It!</button>
         </div>
     </div>
     `
@@ -54,6 +54,13 @@ function renderModal(projId) {
     $('.modal-content .container').html(strHtml);
 
 }
+
+function onSendMsg(){
+    var msgSubject = $('#SubjectControlInput1').val();
+    var msgBody = $('#FormControlTextarea1').val();
+    sendMsg(msgSubject, msgBody);
+}
+
 
 $(document).ready(function(){
     renderProjects();

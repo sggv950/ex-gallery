@@ -29,28 +29,42 @@
   <div class="offcanvas-btn" onClick="openCanvas()">
     <i class="fa fa-comment" aria-hidden="true"></i>
   </div>
-  <aside class="offcanvas-aside">
 
-  <!-- Contact -->
-  <section id="contact">
-    <h4>Contact Me</h4>
-  </section>
-    
+
+  <aside class="offcanvas-aside">
+    <!-- Contact -->
+    <section id="contact">
+      <h4>Contact Me</h4>
+      <form>
+        <div class="mt-4 form-row">
+          <div class="col">
+              <label for="NameControlInput1">Full Name</label>
+            <input type="text" class="form-control"  id="NameControlInput1">
+            <label class="mt-2" for="SubjectControlInput1">Subject</label>
+            <input  type="text" class="form-control" id="SubjectControlInput1">
+          </div>
+          </div>
+        </div>
+
+        <div class="form-group mt-2">
+          <label for="FormControlTextarea1">Message</label>
+          <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button class="btn btn-success" onclick="onSendMsg()">Send</button>
+      </form>
+    </section>
   </aside>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Meet Me</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fa fa-bars"></i>
-        </button>
+        <i class="fa fa-bars"></i>
+      </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Specialities</a>
-          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
           </li>
@@ -77,7 +91,7 @@
   </header>
 
   <!-- Services -->
-  <section id="services">
+  <!-- <section id="services">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -88,34 +102,37 @@
       <div class="row text-center">
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-            </span>
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+          </span>
           <h4 class="service-heading">E-Commerce</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
+            quo inventore harum ex
             magni, dicta impedit.</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-            </span>
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+          </span>
           <h4 class="service-heading">Responsive Design</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
+            quo inventore harum ex
             magni, dicta impedit.</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-            </span>
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+          </span>
           <h4 class="service-heading">Web Security</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
+            quo inventore harum ex
             magni, dicta impedit.</p>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Portfolio Grid -->
   <section class="bg-light" id="portfolio">
@@ -136,38 +153,40 @@
 
   <!-- Me -->
   <section class="bg-light" id="me" style="padding: 0px;">
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/1.png" alt="">
-            <h4>Assaf Segev</h4>
-            <p class="text-muted">Web Developer
-            </p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-8 flex-align-center">
-            <p class="large text-muted  about-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis,
-                totam corporis ea, alias ut unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis,
-                totam corporis ea, alias ut unde.</p>    
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="img/team/1.png" alt="">
+          <h4>Assaf Segev</h4>
+          <p class="text-muted">Web Developer
+          </p>
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
+      <div class="col-sm-8 flex-align-center">
+        <p class="large text-muted  about-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+          eaque, laboriosam veritatis, quos non quis ad perspiciatis,
+          totam corporis ea, alias ut unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
+          laboriosam veritatis, quos non quis ad perspiciatis,
+          totam corporis ea, alias ut unde.</p>
+      </div>
+    </div>
   </section>
 
 
@@ -184,23 +203,23 @@
           <ul class="list-inline social-buttons flex-align-center">
             <li class="list-inline-item">
               <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
+                <i class="fa fa-twitter"></i>
+              </a>
             </li>
             <li class="list-inline-item flex-align-center">
               <a href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
+                <i class="fa fa-facebook"></i>
+              </a>
             </li>
             <li class="list-inline-item">
               <a href="#">
-                  <i class="fa fa-linkedin"></i>
-                </a>
+                <i class="fa fa-linkedin"></i>
+              </a>
             </li>
           </ul>
         </div>
         <div class="col-md-4 flex-align-center">
-            <ul class="list-inline quicklinks">
+          <ul class="list-inline quicklinks">
             <li class="list-inline-item">
               <a href="#">More Me</a>
             </li>
@@ -225,7 +244,7 @@
           </div>
         </div>
         <div class="container">
-          
+
         </div>
       </div>
     </div>

@@ -85,7 +85,7 @@ body {
     position: fixed;
     height: 100%;
     z-index: 100000;
-    background: red;
+    background: lightgrey;
     width: 30vw;
     left: -30vw;
     transition: all 0.3s ease;
@@ -107,7 +107,7 @@ body {
     left: 0;
 }
 #mainNav {
-    background-color: #222222;
+    background-color: gray;
 }
 #mainNav .navbar-toggler {
     font-size: 12px;
@@ -166,7 +166,7 @@ body {
     #mainNav.navbar-shrink {
         padding-top: 0;
         padding-bottom: 0;
-        background-color: #222222;
+        background-color: gray;
     }
     #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
@@ -244,7 +244,6 @@ header.masthead .intro-text .intro-heading {
     position: relative;
     display: block;
     max-width: 400px;
-    height: 115px;
     margin: 0 auto;
     cursor: pointer;
 }
