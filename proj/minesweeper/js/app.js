@@ -325,7 +325,6 @@ function loseGame() {
 }
 
 function winGame() {
-    debugger;
     clearInterval(gTimerInterval);
     var tempScoreLevel = gLevel.NAME;
     var tempScore = gState.timePassed;
@@ -348,7 +347,6 @@ function checkWin() {
 
 // CR: You can do it much simpler. You have gLevel or gState for example.
 function showBestScore() {
-    debugger;
     gLevel = setGameDifficulty();
     var tempScoreLevel = gLevel.NAME;
     var tempScore = localStorage.getItem(tempScoreLevel) ? localStorage.getItem(tempScoreLevel) + ' sec' : '--';
