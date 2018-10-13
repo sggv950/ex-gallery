@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bs4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Book Store</h1>
+        <hr class="my-4">
+        <p>A simple book store.</p>
+    </div>
+    <div class="container">
+        
+
+        <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#add-book-modal">
+            +Add New Book
+        </button>
+        <!-- Add Book Modal -->
+        <div class="modal fade" id="add-book-modal" tabindex="-1" role="dialog" aria-labelledby="add-book-modal-label"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="add-book-modal-label">Add New Book</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <form>
+                            <div class="form-group">
+                                <label for="new-book-name">New Book Name:</label>
+                                <input type="text" class="form-control" id="new-book-name" placeholder="Enter Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="new-book-price">New Book Price:</label>
+                                <input type="text" class="form-control" id="new-book-price" placeholder="Enter Price">
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="onAddBook()">Add
+                            Book</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Read Book Modal -->
+        <div class="modal fade" id="read-book-modal" tabindex="-1" role="dialog" aria-labelledby="read-book-modal-title"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="read-book-modal-title"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body read-book-modal-body"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col" class="text-center">Book Image</th>
+                    <th scope="col" class="text-center">Book name</th>
+                    <th scope="col" class="text-center">Price</th>
+                    <th scope="col" class="text-center">Rate</th>
+                    <th scope="col" class="text-center" colspan="3"></th>
+                </tr>
+            </thead>
+            <tbody class="table-body">
+
+
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/bs4/js/bootstrap.bundle.min.js"></script>
+    <script src="js/utils-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/book-main.js"></script>
+</body>
+
+</html>

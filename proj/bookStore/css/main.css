@@ -1,0 +1,13 @@
+
+@import url(../lib/bs4/css/bootstrap.min.css);
+
+h1 {
+    color: var(--blue);
+    /* color: var(--danger); */
+}
+
+.table-body td{
+    padding: 1rem;
+    vertical-align: unset;
+}
+

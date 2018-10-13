@@ -1,0 +1,114 @@
+body {
+    background-image: linear-gradient(to bottom right, rgb(201, 189, 189), rgb(139, 139, 233));
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.filter-sort-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.todo-list {
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-list li {
+    margin: 5px 0px 5px 0px;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.btn-delete {
+    border: 0;
+    background-color: lightcoral;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn-delete:hover {
+    background-color: brown;
+    color:white;
+}
+
+.btn-delete:active {
+    background-color: red;
+}
+
+section {
+    text-align: center;
+}
+ select {
+     /* margin: 0px 10px 0px 10px; */
+     font-size: 15px;
+     font-weight: bold;
+     border-radius: 5px;
+     height: 30px;
+ }
+
+.add-todo-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: grey;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.add-todo-container input {
+    height: 25px;
+    border-radius: 5px;
+    width: 300px;
+    margin: 10px;
+}
+
+.add-todo-container button {
+    height: 25px;
+    border-radius: 5px;
+    margin:10px;
+}
+
+h1 {
+    color: greenyellow;
+}
+
+header {
+    text-align: center;
+}
+
+.forgetable {
+    color: greenyellow;
+}
+
+.important {
+    color: black;
+    font-weight: bold;
+}
+
+.very-important {
+    color: red;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: underline;
+}

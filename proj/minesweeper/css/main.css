@@ -1,0 +1,99 @@
+body {
+    font-family: monospace;
+}
+.container {
+    width: 400px;
+    height: 580px;
+    border: 2px solid black;
+    background-image: linear-gradient(to right, rgb(61, 187, 230) , grey);
+    border-radius: 2px;
+}
+.top-bar {
+    height: 100px;
+    width: 400px;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+}
+.timer {
+    float: left;
+    border: 2px solid black;
+    height: 40px;
+    width: 90px;
+    margin: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+.face{
+    float: left;
+    border: 3px solid black;
+    height: 55px;
+    width: 50px;
+    margin: 23px;
+}
+.face button {
+    display: contents;
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
+}
+.flags-count {
+    float: left;
+    border: 2px solid black;
+    height: 25px;
+    width: 100px;
+    margin: 22px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+.board {
+    border: 2px solid black;
+    margin: auto;
+}
+.cell{
+    border-radius: 3px;
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.4em;
+    background-color: beige;
+    box-shadow: 1px 1px black;
+}
+.hide {
+    color: rgb(161, 173, 128);
+    background-color: rgb(161, 173, 128);
+}
+.wrong {
+    background-color: red;
+}
+
+.difficulty {
+    text-align: center;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.difficulty input {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.best-score{
+    height: 20px;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
