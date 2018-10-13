@@ -40,6 +40,11 @@ section h3.section-subheading {
     text-transform: none;
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+#contact input {
+    width: 90%;
+}
+
 @media (min-width: 768px) {
     section {
         padding: 150px 0;
